@@ -2,7 +2,7 @@ import { app, BrowserWindow } from 'electron'
 import * as path from 'path'
 import { format as formatUrl } from 'url'
 
-import server from '../server'
+import server from '../../packages/server/src'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
