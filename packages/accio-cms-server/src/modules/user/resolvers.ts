@@ -1,6 +1,4 @@
-import { Resolvers } from '../../../generated-models';
-
-export const resolvers: Resolvers = {
+export default {
   Query: {
     user: (_root: any, props: { id: any }) => {
       return {

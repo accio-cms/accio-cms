@@ -1,8 +1,10 @@
 import { GraphQLModule } from '@graphql-modules/core'
-import { loadResolversFiles, loadSchemaFiles } from 'graphql-toolkit';
+
+import typeDefs from './schema'
+import resolvers from './resolvers'
 
 export default new GraphQLModule({
   name: 'user',
-  typeDefs: loadSchemaFiles(__dirname + '/schema/'),
-  resolvers: loadResolversFiles(__dirname + '/resolvers/'),
+  typeDefs,
+  resolvers,
 })

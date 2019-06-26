@@ -2,7 +2,7 @@ import { app, BrowserWindow } from 'electron'
 import * as path from 'path'
 import { format as formatUrl } from 'url'
 
-import server from '../../packages/server/src'
+import server from '../../packages/accio-cms-server/src/server'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
