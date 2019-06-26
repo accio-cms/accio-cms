@@ -1,4 +1,4 @@
-import { Resolvers } from '../../generated-models';
+import { Resolvers } from '../../../generated-models';
 
 export const resolvers: Resolvers = {
   Query: {

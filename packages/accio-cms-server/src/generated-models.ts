@@ -1,5 +1,5 @@
-import { GraphQLResolveInfo } from 'graphql'
-import { ModuleContext } from '@graphql-modules/core'
+import { GraphQLResolveInfo } from 'node_modules/@types/graphql'
+import { ModuleContext } from 'node_modules/@graphql-modules/core/dist/esnext'
 export type Maybe<T> = T | null
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 /** All built-in and custom scalars, mapped to their actual values */

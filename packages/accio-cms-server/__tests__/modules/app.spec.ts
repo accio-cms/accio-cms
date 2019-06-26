@@ -1,7 +1,7 @@
-import { createTestClient } from 'apollo-server-testing'
-import gql from 'graphql-tag'
+import { createTestClient } from '../../node_modules/apollo-server-testing/dist'
+import gql from '../../node_modules/graphql-tag'
 
-import { server } from '../../index';
+import server from '../../src/server';
 
 describe('AppModule', () => {
   it('FieldResolver of Query: user', async () => {

@@ -15,12 +15,12 @@
     "emitDecoratorMetadata": true,
     "sourceMap": true,
     "declaration": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "",
     "paths": {
       "@modules/*": [
-        "./modules/*"
+        "modules/*"
       ]
     }
   },
@@ -28,9 +28,10 @@
     "src/**/*.ts"
   ],
   "files": [
-    "src/index.ts"
+    "src/server.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "__tests__",
   ]
 }

@@ -1,17 +1,7 @@
-import 'reflect-metadata'
-import { ApolloServer } from 'apollo-server'
+import server from './server'
 
-import { AppModule } from './app-module'
+const port = 4000
 
-const server = new ApolloServer({
-  schema: AppModule.schema,
-  context: AppModule.context,
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`)
 })
-
-server.listen({
-  port: 4000,
-}).then((props: { url: string }) => {
-  console.log(`🚀  Server ready at ${props.url}`)
-})
-
-export default server

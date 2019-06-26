@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "ts-jest": {
+      "diagnostics": false
+    }
+  },
+  "transform": {
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest",
+    "^.+\\.graphql$": "graphql-import-node/jest"
+  },
+  "testRegex": "(<rootDir>/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+}
