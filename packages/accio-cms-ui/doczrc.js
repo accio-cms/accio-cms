@@ -1,10 +1,10 @@
 export default {
   typescript: true,
   themeConfig: {
-    mode: 'dark',
+    mode: 'light',
   },
   menu: [
-    'Hello world',
+    'Docs',
     'App',
   ],
 }

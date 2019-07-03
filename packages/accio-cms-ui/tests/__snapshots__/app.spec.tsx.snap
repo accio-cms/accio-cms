@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Say my name, say my name... 1`] = `
-<h1>
-  POOP
+exports[`App with blue color 1`] = `
+.emotion-0 {
+  display: inline-block;
+  color: blue;
+}
+
+<h1
+  className="emotion-0"
+>
+  Poop
+</h1>
+`;
+
+exports[`App without color 1`] = `
+.emotion-0 {
+  display: inline-block;
+  color: red;
+}
+
+<h1
+  className="emotion-0"
+>
+  Poop
 </h1>
 `;

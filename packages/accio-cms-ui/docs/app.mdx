@@ -1,0 +1,19 @@
+---
+name: App
+route: app
+---
+
+import { Playground, Props } from 'docz'
+import App from '../src/app'
+
+## App
+
+<Props of={App} />
+
+## Usage
+
+<Playground>
+  <App msg={'Poop!'} />
+  {' '}
+  <App msg={'Poop!'} dataColor={'#abc'} />
+</Playground>
