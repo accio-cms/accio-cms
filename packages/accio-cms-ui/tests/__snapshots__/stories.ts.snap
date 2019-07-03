@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots App with Poop 1`] = `
-<h1>
-  POOP
-</h1>
-`;
