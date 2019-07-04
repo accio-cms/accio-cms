@@ -55,5 +55,9 @@
     "@emotion/styled": "^10.0.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "fb9ddda5438116d5697fe0a9eb4a820546999112"
 }
