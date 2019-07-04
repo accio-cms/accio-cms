@@ -6,7 +6,6 @@
   "repository": "alexeiaccio/desktop",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",

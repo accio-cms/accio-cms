@@ -5,7 +5,6 @@
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "repository": "alexeiaccio/ui",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "compile": "tsc",
     "test": "jest -u",

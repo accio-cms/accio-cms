@@ -6,7 +6,6 @@
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "repository": "alexeiaccio/server",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts",
     "debug": "nodemon --exec ts-node -r tsconfig-paths/register --inspect --debug-brk src/index.ts",
