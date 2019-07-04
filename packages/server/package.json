@@ -1,6 +1,6 @@
 {
   "name": "@accio/server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Graphql Server for Accio CMS",
   "main": "index.js",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
