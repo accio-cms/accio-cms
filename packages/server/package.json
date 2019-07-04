@@ -43,6 +43,5 @@
     "ts-node": "^8.3.0",
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
-  },
-  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
+  }
 }

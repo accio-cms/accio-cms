@@ -39,6 +39,5 @@
     "react-dom": "^16.8.6",
     "source-map-support": "^0.5.12",
     "ts-node": "^8.3.0"
-  },
-  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
+  }
 }

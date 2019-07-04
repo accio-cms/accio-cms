@@ -55,6 +55,5 @@
     "@emotion/styled": "^10.0.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  },
-  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
+  }
 }
