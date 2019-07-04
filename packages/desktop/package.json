@@ -1,5 +1,5 @@
 {
-  "name": "desktop",
+  "name": "@accio/desktop",
   "version": "0.0.4-alpha.0",
   "description": "Accio Desktop",
   "main": "main.js",
@@ -40,5 +40,5 @@
     "source-map-support": "^0.5.12",
     "ts-node": "^8.3.0"
   },
-  "gitHead": "cea811ed6b47fc2aee6844f7ece5dc765b63b35a"
+  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
 }

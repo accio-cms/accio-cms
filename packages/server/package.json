@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "@accio/server",
   "version": "0.0.4-alpha.0",
   "description": "Graphql Server for Accio CMS",
   "main": "index.js",
@@ -44,5 +44,5 @@
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
   },
-  "gitHead": "cea811ed6b47fc2aee6844f7ece5dc765b63b35a"
+  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
 }

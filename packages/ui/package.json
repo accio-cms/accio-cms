@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@accio/ui",
   "version": "0.0.4-alpha.0",
   "main": "index.js",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
@@ -56,5 +56,5 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "gitHead": "cea811ed6b47fc2aee6844f7ece5dc765b63b35a"
+  "gitHead": "9eecc9caeee519bf73f4149cad27a2ae292d1815"
 }
