@@ -4,6 +4,7 @@
   "description": "Graphql Server for Accio CMS",
   "main": "index.js",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
+  "repository": "alexeiaccio/server",
   "license": "MIT",
   "private": true,
   "scripts": {

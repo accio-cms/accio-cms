@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
+  "repository": "alexeiaccio/ui",
   "license": "MIT",
   "private": true,
   "scripts": {

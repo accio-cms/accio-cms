@@ -1,0 +1,13 @@
+{
+  "name": "desktop",
+  "version": "0.0.1",
+  "description": "Accio Headless CMS",
+  "main": "main.js",
+  "repository": "https://github.com/alexeiaccio/accio.git",
+  "author": "Alexei Accio <alexei.accio@gmail.com> (https://beta.accio.pro)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lerna": "^3.15.0"
+  }
+}
