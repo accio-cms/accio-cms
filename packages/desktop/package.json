@@ -1,6 +1,6 @@
 {
   "name": "@accio/desktop",
-  "version": "0.0.4-alpha.0",
+  "version": "0.0.4",
   "description": "Accio Desktop",
   "main": "main.js",
   "repository": "alexeiaccio/desktop",
