@@ -1,5 +1,5 @@
 {
-  "name": "accio-cms-server",
+  "name": "server",
   "version": "0.0.3-alpha.0",
   "description": "Graphql Server for Accio CMS",
   "main": "index.js",
@@ -43,5 +43,6 @@
     "ts-node": "^8.3.0",
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
-  }
+  },
+  "gitHead": "cea811ed6b47fc2aee6844f7ece5dc765b63b35a"
 }
