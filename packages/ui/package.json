@@ -9,8 +9,8 @@
     "compile": "tsc",
     "test": "jest -u",
     "dev": "webpack-dev-server",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "docs": "docz dev",
+    "docz-build": "docz build"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
