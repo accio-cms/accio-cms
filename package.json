@@ -1,15 +1,21 @@
 {
-  "name": "desktop",
+  "name": "@alexeiaccio/accio",
   "version": "0.0.1",
   "description": "Accio Headless CMS",
   "main": "main.js",
-  "repository": "https://github.com/alexeiaccio/accio.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeiaccio/accio.git"
+  },
   "author": "Alexei Accio <alexei.accio@gmail.com> (https://beta.accio.pro)",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "lerna": "^3.15.0"
   },
   "publishConfig": {
-    "access": "public"
-  }
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

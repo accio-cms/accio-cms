@@ -11,10 +11,11 @@
     }
   },
   "loglevel": "success",
-  "registry": "https://registry.npmjs.org/",
+  "registry": "https://npm.pkg.github.com/",
   "npmClient": "yarn",
 	"packages": [
 		"packages/*"
   ],
+  "useWorkspaces": true,
 	"version": "independent"
 }
