@@ -5,7 +5,8 @@
   "main": "main.js",
   "repository" : {
     "type" : "git",
-    "url": "ssh://git@github.com/alexeiaccio/accio.git"
+    "url": "https://@github.com/alexeiaccio/accio.git",
+    "directory": "packages/desktop"
   },
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "license": "MIT",

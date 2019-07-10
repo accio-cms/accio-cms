@@ -10,3 +10,5 @@ node_modules/
 .docz/
 dist/
 build/
+.cache/
+public/

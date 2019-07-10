@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-starter-accio",
+  "version": "0.0.1",
+  "description": "Gatsby Starter for Accio CMS",
+  "keywords": [
+    "accio",
+    "cms",
+    "gatsby"
+  ],
+  "author": "Alexei Accio <alexei.accio@gmail.com>",
+  "homepage": "https://cms.accio.pro",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeiaccio/accio.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/alexeiaccio/accio/issues"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.12",
+    "gatsby-theme-accio": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

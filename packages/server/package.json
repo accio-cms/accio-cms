@@ -6,7 +6,8 @@
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "repository" : {
     "type" : "git",
-    "url": "ssh://git@github.com/alexeiaccio/accio.git"
+    "url": "https://github.com/alexeiaccio/accio.git",
+    "directory": "packages/server"
   },
   "license": "MIT",
   "scripts": {
