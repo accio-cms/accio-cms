@@ -1,11 +1,11 @@
 const path = require(`path`)
 
-module.exports = {
+module.exports = ({ contentPath = 'data', basePath = '/' }) => ({
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: path.join(__dirname, `data`),
+        path: path.join(__dirname, contentPath),
       },
     },
     {
@@ -15,4 +15,4 @@ module.exports = {
       },
     },
   ],
-}
+})
