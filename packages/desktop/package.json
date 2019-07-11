@@ -1,12 +1,15 @@
 {
-  "name": "@alexeiaccio/desktop",
+  "name": "@accio-cms/desktop",
   "version": "0.0.6",
-  "description": "Accio Desktop",
+  "description": "Accio CMS Desktop",
   "main": "main.js",
   "repository" : {
     "type" : "git",
-    "url": "https://@github.com/alexeiaccio/accio.git",
+    "url": "https://@github.com/accio-cms/accio-cms.git",
     "directory": "packages/desktop"
+  },
+  "bugs": {
+    "url": "https://github.com/accio-cms/accio-cms/issues"
   },
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "license": "MIT",
@@ -44,5 +47,7 @@
     "source-map-support": "^0.5.12",
     "ts-node": "^8.3.0"
   },
-  "gitHead": "fb9ddda5438116d5697fe0a9eb4a820546999112"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
+  }
 }

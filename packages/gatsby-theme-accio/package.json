@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-accio",
+  "name": "@accio-cms/gatsby-theme-accio",
   "version": "0.0.1",
   "description": "Gatsby Theme for Accio CMS",
   "keywords": [
@@ -19,11 +19,12 @@
     "src"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexeiaccio/accio.git"
+    "url": "https://github.com/accio-cms/accio-cms.git",
+    "directory": "packages/gatsby-theme-accio"
   },
   "scripts": {
     "build": "gatsby build",
@@ -32,7 +33,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/alexeiaccio/accio/issues"
+    "url": "https://github.com/accio-cms/accio-cms/issues"
   },
   "peerDependencies": {
     "gatsby": "^2.13.12",

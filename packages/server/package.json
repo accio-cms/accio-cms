@@ -1,13 +1,16 @@
 {
-  "name": "@alexeiaccio/server",
+  "name": "@accio-cms/server",
   "version": "0.0.6",
   "description": "Graphql Server for Accio CMS",
   "main": "index.js",
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "repository" : {
     "type" : "git",
-    "url": "https://github.com/alexeiaccio/accio.git",
+    "url": "https://github.com/accio-cms/accio-cms.git",
     "directory": "packages/server"
+  },
+  "bugs": {
+    "url": "https://github.com/accio-cms/accio-cms/issues"
   },
   "license": "MIT",
   "scripts": {
@@ -48,5 +51,7 @@
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
   },
-  "gitHead": "fb9ddda5438116d5697fe0a9eb4a820546999112"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
+  }
 }

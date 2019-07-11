@@ -14,7 +14,7 @@
     }
   },
   "loglevel": "success",
-  "registry": "https://npm.pkg.github.com/",
+  "registry": "https://registry.npmjs.com/",
   "npmClient": "yarn",
 	"packages": [
 		"packages/*"
