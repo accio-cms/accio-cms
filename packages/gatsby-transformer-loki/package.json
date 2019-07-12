@@ -1,14 +1,14 @@
 {
-  "name": "@accio-cms/gatsby-starter-accio",
+  "name": "@accio-cms/gatsby-transformer-loki",
   "version": "0.0.1",
-  "description": "Gatsby Starter for Accio CMS",
+  "description": "Gatsby  transformer plugin for LokiDB",
   "keywords": [
-    "accio",
-    "cms",
-    "gatsby"
+    "gatsby",
+    "gatsby-plugin",
+    "loki"
   ],
   "author": "Alexei Accio <alexei.accio@gmail.com>",
-  "homepage": "https://cms.accio.pro",
+  "homepage": "https://github.com/accio-cms/accio-cms/tree/master/packages/gatsby-source-loki#readme",
   "license": "MIT",
   "main": "index.js",
   "directories": {
@@ -24,22 +24,15 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/accio-cms/accio-cms.git",
-    "directory": "packages/gatsby-starter-accio"
+    "directory": "packages/gatsby-transformer-loki"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "gatsby clean",
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.12"
   },
   "bugs": {
     "url": "https://github.com/accio-cms/accio-cms/issues"
-  },
-  "dependencies": {
-    "@accio-cms/gatsby-transformer-loki": "*",
-    "gatsby": "^2.13.12",
-    "gatsby-source-filesystem": "^2.1.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   }
 }
