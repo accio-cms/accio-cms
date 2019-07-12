@@ -1,13 +1,11 @@
-const path = require(`path`)
 const fs = require(`fs`)
 
-exports.onPreBootstrap = ({ reporter }, options) => {
-  const contentPath = options.contentPath || 'data'
+exports.onPreBootstrap = ({ reporter }) => {
+  const contentPath = 'data'
 
-  reporter.info(`${path.join(__dirname, contentPath)}`)
-  if (!fs.existsSync(path.join(__dirname, contentPath))) {
+  if (!fs.existsSync(contentPath)) {
     reporter.info(`creating the ${contentPath} directory`)
-    fs.mkdirSync(path.join(__dirname, contentPath))
+    fs.mkdirSync(contentPath)
   }
 }
 
@@ -24,8 +22,8 @@ exports.sourceNodes = ({ actions }) => {
   `)
 }
 
-exports.createResolvers = ({ createResolvers }, options) => {
-  const basePath = options.basePath || '/'
+exports.createResolvers = ({ createResolvers }) => {
+  const basePath = '/'
 
   const slugify = str => {
     const slug = str
@@ -61,10 +59,10 @@ exports.createResolvers = ({ createResolvers }, options) => {
 }
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const basePath = options.basePath || '/'
+  const basePath = '/'
   actions.createPage({
     path: basePath,
-    component: require.resolve(path.join(__dirname, 'src/templates/items'))
+    component: require.resolve('./src/templates/items')
   })
 
   const result =  await graphql(`
@@ -85,14 +83,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  const items = result.data.allItem.nodes[0].data
+  const items = result.data.allItem.nodes
+    .reduce((acc, item) => acc.concat(item.data), [])
 
   items.forEach(item => {
     const slug = item.slug
 
     actions.createPage({
       path: slug,
-      component: require.resolve(path.join(__dirname, 'src/templates/item')),
+      component: require.resolve('./src/templates/item'),
       context: {
         itemIdx: item.idx
       }
