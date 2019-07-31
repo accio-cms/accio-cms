@@ -1,6 +1,6 @@
 {
   "name": "@accio-cms/gatsby-transformer-loki",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Gatsby  transformer plugin for LokiDB",
   "keywords": [
     "gatsby",
