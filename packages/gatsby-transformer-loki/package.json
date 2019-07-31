@@ -1,6 +1,6 @@
 {
   "name": "@accio-cms/gatsby-transformer-loki",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Gatsby  transformer plugin for LokiDB",
   "keywords": [
     "gatsby",
@@ -27,7 +27,6 @@
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
-    "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir . --ignore **/__tests__",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
