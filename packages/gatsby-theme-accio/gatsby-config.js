@@ -12,9 +12,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: '@accio-cms/gatsby-transformer-loki',
       options: {
-        typeName: `Item`,
+        typeName: 'Page',
       },
     },
   ],

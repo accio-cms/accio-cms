@@ -7,14 +7,15 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: path.join(__dirname, 'data'),
+        name: 'db',
       },
     },
-    // {
-    //   resolve: '@accio-cms/gatsby-transformer-loki',
-    //   options: {
-    //     typeName: 'Loki',
-    //   },
-    // },
+    {
+      resolve: '@accio-cms/gatsby-transformer-loki',
+      options: {
+        typeName: 'Poop',
+      },
+    },
     // {
     //   resolve: '@accio-cms/gatsby-theme-accio',
     // }

@@ -3,31 +3,49 @@ const path = require(`path`)
 
 async function onCreateNode(
   { node, actions, loadNodeContent, createNodeId, createContentDigest },
-  pluginOptions
+  { typeName }
 ) {
-  function getType({ node, object, isArray }) {
-    if (pluginOptions && _.isFunction(pluginOptions.typeName)) {
-      return pluginOptions.typeName({ node, object, isArray })
-    } else if (pluginOptions && _.isString(pluginOptions.typeName)) {
-      return pluginOptions.typeName
-    } else if (isArray) {
-      return _.upperFirst(_.camelCase(`${node.name} Json`))
+  function getType({ node, object }) {
+    if (_.isFunction(typeName)) {
+      return typeName({ node, object })
+    } else if (_.isString(typeName)) {
+      return typeName
+    } else if (node.internal.type !== `File`) {
+      return _.upperFirst(_.camelCase(`${node.internal.type} Loki`))
     } else {
-      return _.upperFirst(_.camelCase(`${path.basename(node.dir)} Json`))
+      return _.upperFirst(_.camelCase(`${path.basename(node.dir)} Loki`))
     }
   }
 
   function transformObject(obj, id, type) {
+    const collections = []
+    
+    _.forEach(obj.collections, ({ name, data, ...rest }) => {
+      collections.push({
+        name,
+        data,
+        meta: {
+          ...rest,
+        }
+      })
+    })
+
+    const lokiContent = {
+      collections,
+      meta: _.omit(obj, 'collections'),
+    }
+
     const lokiNode = {
-      ...obj,
+      ...lokiContent,
       id,
       children: [],
       parent: node.id,
       internal: {
-        contentDigest: createContentDigest(obj),
+        contentDigest: createContentDigest(lokiContent),
         type,
       },
     }
+
     createNode(lokiNode)
     createParentChildLink({ parent: node, child: lokiNode })
   }
@@ -41,18 +59,10 @@ async function onCreateNode(
   const content = await loadNodeContent(node)
   const parsedContent = JSON.parse(content)
 
-  if (_.isArray(parsedContent)) {
-    parsedContent.forEach((obj, i) => {
-      transformObject(
-        obj,
-        obj.id ? obj.id : createNodeId(`${node.id} [${i}] >>> JSON`),
-        getType({ node, object: obj, isArray: true })
-      )
-    })
-  } else if (_.isPlainObject(parsedContent)) {
+  if (_.isPlainObject(parsedContent)) {
     transformObject(
       parsedContent,
-      parsedContent.id ? parsedContent.id : createNodeId(`${node.id} >>> JSON`),
+      parsedContent.id ? parsedContent.id : createNodeId(`${node.id} >>> LOKI`),
       getType({ node, object: parsedContent, isArray: false })
     )
   }
