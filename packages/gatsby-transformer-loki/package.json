@@ -1,6 +1,6 @@
 {
   "name": "@accio-cms/gatsby-transformer-loki",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gatsby  transformer plugin for LokiDB",
   "keywords": [
     "gatsby",
@@ -10,7 +10,6 @@
   "author": "Alexei Accio <alexei.accio@gmail.com>",
   "homepage": "https://github.com/accio-cms/accio-cms/tree/master/packages/gatsby-source-loki#readme",
   "license": "MIT",
-  "main": "index.js",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -27,6 +26,9 @@
     "directory": "packages/gatsby-transformer-loki"
   },
   "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "peerDependencies": {
@@ -34,5 +36,15 @@
   },
   "bugs": {
     "url": "https://github.com/accio-cms/accio-cms/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "core-js": "3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "babel-preset-gatsby-package": "^0.2.2",
+    "cross-env": "^5.2.0"
   }
 }
